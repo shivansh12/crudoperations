@@ -18,7 +18,7 @@ def creat_employee_view(request):
 
     return render(request,'testapp/create.html',{'form':form})
 
-# remeber delete view
+
 def delet_view(request,id):
     id=int(id)
     employee=Employee.objects.get(id=id)
@@ -27,7 +27,7 @@ def delet_view(request,id):
 
 
 
-# rememberupdate view
+
 def update_view(request,id):
     id=int(id)
     employee=Employee.objects.get(id=id)
